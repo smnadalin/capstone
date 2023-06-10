@@ -1,3 +1,5 @@
+import logo from "./Images/logo_vertical.png";
+
 function Footer() {
   const doormatNavigationItems = [
     "Home",
@@ -10,9 +12,12 @@ function Footer() {
   const contactItems = ["Address", "Phone Number", "Email"];
   const socialMediaLinks = ["Address", "Phone Number", "Email"];
   return (
-    <>
+    <footer>
       <div>
-        <h1>Doormat Navigation</h1>
+        <img src={logo} alt="Logo" width="60%"></img>
+      </div>
+      <div>
+        <p>Doormat Navigation</p>
         <ul>
           {doormatNavigationItems.map((e) => (
             <li>{e}</li>
@@ -20,7 +25,7 @@ function Footer() {
         </ul>
       </div>
       <div>
-        <h1>Contact</h1>
+        <p>Contact</p>
         <ul>
           {contactItems.map((e) => (
             <li>{e}</li>
@@ -28,14 +33,14 @@ function Footer() {
         </ul>
       </div>
       <div>
-        <h1>Social Media Links</h1>
+        <p>Social Media Links</p>
         <ul>
           {socialMediaLinks.map((e) => (
             <li>{e}</li>
           ))}
         </ul>
       </div>
-    </>
+    </footer>
   );
 }
 

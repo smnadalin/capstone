@@ -3,14 +3,14 @@ import logo from "./Images/Logo.svg";
 function Nav() {
   const hyperlinks = ["Home", "About", "Menu", "Reservations", "Login"];
   return (
-    <>
+    <nav>
       <img src={logo} alt="Logo"></img>
-      <ul>
+      <ul className="navLinks">
         {hyperlinks.map((e) => (
-          <ul>{e}</ul>
+          <li>{e}</li>
         ))}
       </ul>
-    </>
+    </nav>
   );
 }
 
