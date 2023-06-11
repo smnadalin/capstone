@@ -1,5 +1,9 @@
 function Header() {
-  return <></>;
+  return (
+    <>
+      <p>Headers Section Placeholder</p>
+    </>
+  );
 }
 
 export default Header;

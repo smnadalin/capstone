@@ -1,8 +1,8 @@
 import "./App.css";
 import Footer from "./Footer";
-import Header from "./Header";
-import Main from "./Main";
+
 import Nav from "./Nav";
+import Main from "./Main";
 import logo from "./Images/Logo.svg";
 
 function App() {
@@ -16,7 +16,6 @@ function App() {
       </head>
       <body>
         <Nav />
-        <Header />
         <Main />
         <Footer />
       </body>

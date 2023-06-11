@@ -1,13 +1,22 @@
 import logo from "./Images/Logo.svg";
+import { Link } from "react-router-dom";
 
 function Nav() {
-  const hyperlinks = ["Home", "About", "Menu", "Reservations", "Login"];
+  const hyperlinkNames = ["Home", "About", "Menu", "Reservations", "Login"];
+  const hyperlinkPage = ["/", "/", "/", "/booking", "/"];
   return (
     <nav>
       <img src={logo} alt="Logo"></img>
       <ul className="navLinks">
-        {hyperlinks.map((e) => (
-          <li>{e}</li>
+        {hyperlinkNames.map((e, index) => (
+          <li>
+            <Link
+              to={hyperlinkPage[index]}
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              {e}
+            </Link>
+          </li>
         ))}
       </ul>
     </nav>

@@ -51,7 +51,7 @@ footer {
 footer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 200px 192px 128px 128px;
+  grid-template-rows: 200px 192px 128px 144 px;
   grid-column-gap: 20px;
 }
 
