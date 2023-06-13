@@ -1,7 +1,46 @@
+import greekSaladImage from "./Images/greek salad.jpg";
+import bruschettaImage from "./Images/bruchetta.svg";
+import lemonImage from "./Images/lemon dessert.jpg";
+
 function Specials() {
   return (
     <>
-      <p>Specials Section Placeholder</p>
+      <div className="specialsHeader">
+        <h1>Specials</h1>
+        <div>
+          <button>Online Menu</button>
+        </div>
+      </div>
+      <div className="specialsMain">
+        <div>
+          <img src={greekSaladImage} alt="Greek Salad" />
+          <p>Greek Salad</p>
+          <p>$12.99</p>
+          <p>
+            The famous greek salad of crispy lettuce, peppers, olives and our
+            Chicago style feta cheese, garnished with crunchy garlic and
+            rosemary croutons.
+          </p>
+        </div>
+        <div>
+          <img src={bruschettaImage} alt="Bruschetta" />
+          <p>Bruschetta</p>
+          <p>$5.99</p>
+          <p>
+            Our Bruschetta is made from grilled bread that has been smeared with
+            garlic and seasoned with salt and olive oil.
+          </p>
+        </div>
+        <div>
+          <img src={lemonImage} alt="Lemon Dessert" />
+          <p>Lemon Dessert</p>
+          <p>$5.00</p>
+          <p>
+            This comes straight from grandma’s recipe book, every last
+            ingredient has been sourced and is as authentic as can be imagined.
+          </p>
+        </div>
+      </div>
     </>
   );
 }
