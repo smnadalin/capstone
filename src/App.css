@@ -136,6 +136,66 @@ main > div > img {
   object-fit: cover;
 }
 
+.testimonialsMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 240px;
+  margin: auto;
+  grid-column-gap: 20px;
+  background-color: #fbdabb;
+  height: 304px;
+}
+
+.testimonialsHeading {
+  margin: auto;
+  text-align: center;
+  background-color: #fbdabb;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.tbRating {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  margin: auto;
+}
+
+.tbReview {
+  grid-column: 1 / 3;
+  grid-row: 3;
+  margin: auto;
+}
+
+.tbImage {
+  grid-column: 1;
+  grid-row: 2;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.tbName {
+  grid-column: 2;
+  grid-row: 2;
+  margin: auto;
+}
+
+.testimonialsBox {
+  border: 1px solid black;
+  margin: auto;
+  width: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 64px 80px 96px;
+}
+
+.testimonialsBox > p {
+  text-align: center;
+}
+
 @media only screen and (min-width: 960px) {
   nav {
     grid-template-columns: 1fr 3fr;
@@ -167,6 +227,11 @@ main > div > img {
   }
 
   .specialsMain {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .testimonialsMain {
     padding-left: 100px;
     padding-right: 100px;
   }

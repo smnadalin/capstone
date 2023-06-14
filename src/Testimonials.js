@@ -1,7 +1,15 @@
+import TestimonialBox from "./TestimonialBox";
+
 function Testimonials() {
   return (
     <>
-      <p>Testimonials Section Placeholder</p>
+      <h1 className="testimonialsHeading">Testimonials</h1>
+      <div className="testimonialsMain">
+        <TestimonialBox />
+        <TestimonialBox />
+        <TestimonialBox />
+        <TestimonialBox />
+      </div>
     </>
   );
 }
