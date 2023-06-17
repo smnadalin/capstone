@@ -1,28 +1,35 @@
 import { useState } from "react";
 
-function BookingForm({ availableTimes, setAvailableTimes }) {
+function BookingForm({ availableTimes, setAvailableTimes, submitForm }) {
   const [resDate, setResDate] = useState("");
   const [resTime, setResTime] = useState("17:00");
   const [guests, setGuests] = useState(1);
-  const [occassion, setOccasion] = useState("Birthday");
+  const [occasion, setOccasion] = useState("Birthday");
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(
-      `Guests: ${guests}, Date: ${resDate}, Time: ${resTime}, Occasion: ${occassion}`
-    );
+    submitForm({
+      date: resDate,
+      time: resTime,
+      guests: guests,
+      occasion: occasion,
+    });
   }
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form data-testid="my-form" onSubmit={handleSubmit}>
         <label htmlFor="res-date">Choose date</label>
         <input
           type="date"
           id="res-date"
           onChange={(e) => {
             setResDate(e.target.value);
-            //setAvailableTimes({ type: "test" });
+            console.log(e.target.value);
+            setAvailableTimes({
+              type: "update",
+              data: new Date(e.target.value),
+            });
           }}
           value={resDate}
         />
@@ -50,7 +57,7 @@ function BookingForm({ availableTimes, setAvailableTimes }) {
         <select
           id="occasion"
           onChange={(e) => setOccasion(e.target.value)}
-          value={occassion}
+          value={occasion}
         >
           <option>Birthday</option>
           <option>Anniversary</option>

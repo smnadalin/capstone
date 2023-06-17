@@ -1,26 +1,33 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import Booking from "./Booking";
 import HomePage from "./HomePage";
+import ConfirmedBooking from "./ConfirmedBooking";
 import { useReducer } from "react";
+import { fetchAPI, submitAPI } from "./API/api";
 
 function Main() {
-  function updateTimes(state, action) {
-    // if (action.type === "test") {
-    //   return ["17:00", "18:00", "19:00"];
-    // }
-
-    return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
-  }
-
-  function initialiseTimes() {
-    const initialTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
-    return initialTimes;
-  }
-
   const [availableTimes, setAvailableTimes] = useReducer(
     updateTimes,
-    initialiseTimes()
+    initialiseTimes(new Date())
   );
+
+  function initialiseTimes(date) {
+    return fetchAPI(date);
+  }
+
+  function updateTimes(state, action) {
+    if (action.type === "update") {
+      return fetchAPI(action.data);
+    }
+  }
+
+  const navigate = useNavigate();
+
+  function submitForm(formData) {
+    if (submitAPI(formData)) {
+      navigate("/booking/confirmed");
+    }
+  }
 
   return (
     <Routes>
@@ -31,9 +38,11 @@ function Main() {
           <Booking
             availableTimes={availableTimes}
             setAvailableTimes={setAvailableTimes}
+            submitForm={submitForm}
           />
         }
       ></Route>
+      <Route path="/booking/confirmed" element={<ConfirmedBooking />}></Route>
     </Routes>
   );
 }

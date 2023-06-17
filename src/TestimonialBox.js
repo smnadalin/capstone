@@ -1,4 +1,4 @@
-import face from "./Images/🦆 icon _eye_.svg";
+import face from "./Images/icon _eye_.svg";
 
 function TestimonialBox() {
   return (
