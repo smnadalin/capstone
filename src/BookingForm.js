@@ -1,18 +1,10 @@
 import { useState } from "react";
 
-function BookingForm() {
+function BookingForm({ availableTimes, setAvailableTimes }) {
   const [resDate, setResDate] = useState("");
   const [resTime, setResTime] = useState("17:00");
   const [guests, setGuests] = useState(1);
   const [occassion, setOccasion] = useState("Birthday");
-  const [availableTimes, setAvailableTimes] = useState([
-    "17:00",
-    "18:00",
-    "19:00",
-    "20:00",
-    "21:00",
-    "22:00",
-  ]);
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -28,7 +20,10 @@ function BookingForm() {
         <input
           type="date"
           id="res-date"
-          onChange={(e) => setResDate(e.target.value)}
+          onChange={(e) => {
+            setResDate(e.target.value);
+            //setAvailableTimes({ type: "test" });
+          }}
           value={resDate}
         />
         <label htmlFor="res-time">Choose time</label>

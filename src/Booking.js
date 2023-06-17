@@ -1,9 +1,12 @@
 import BookingForm from "./BookingForm";
 
-function Booking() {
+function Booking({ availableTimes, setAvailableTimes }) {
   return (
     <>
-      <BookingForm />
+      <BookingForm
+        availableTimes={availableTimes}
+        setAvailableTimes={setAvailableTimes}
+      />
     </>
   );
 }
