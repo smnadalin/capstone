@@ -13,6 +13,8 @@ function Nav() {
             <Link
               to={hyperlinkPage[index]}
               style={{ color: "inherit", textDecoration: "inherit" }}
+              role="Navigation"
+              aria-label={e}
             >
               {e}
             </Link>
