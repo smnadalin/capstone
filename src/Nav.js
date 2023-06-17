@@ -9,7 +9,7 @@ function Nav() {
       <img src={logo} alt="Logo"></img>
       <ul className="navLinks">
         {hyperlinkNames.map((e, index) => (
-          <li>
+          <li key={e}>
             <Link
               to={hyperlinkPage[index]}
               style={{ color: "inherit", textDecoration: "inherit" }}

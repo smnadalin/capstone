@@ -20,7 +20,7 @@ function Footer() {
         <p>Doormat Navigation</p>
         <ul>
           {doormatNavigationItems.map((e) => (
-            <li>{e}</li>
+            <li key={e}>{e}</li>
           ))}
         </ul>
       </div>
@@ -28,7 +28,7 @@ function Footer() {
         <p>Contact</p>
         <ul>
           {contactItems.map((e) => (
-            <li>{e}</li>
+            <li key={e}>{e}</li>
           ))}
         </ul>
       </div>
@@ -36,7 +36,7 @@ function Footer() {
         <p>Social Media Links</p>
         <ul>
           {socialMediaLinks.map((e) => (
-            <li>{e}</li>
+            <li key={e}>{e}</li>
           ))}
         </ul>
       </div>

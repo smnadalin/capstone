@@ -196,6 +196,12 @@ main > div > img {
   text-align: center;
 }
 
+form {
+  display: grid;
+  max-width: 200px;
+  gap: 20px;
+}
+
 @media only screen and (min-width: 960px) {
   nav {
     grid-template-columns: 1fr 3fr;

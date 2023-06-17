@@ -1,7 +1,9 @@
+import BookingForm from "./BookingForm";
+
 function Booking() {
   return (
     <>
-      <p>Booking Section Placeholder</p>
+      <BookingForm />
     </>
   );
 }
