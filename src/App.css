@@ -18,14 +18,12 @@ nav {
   grid-template-columns: 1fr;
   grid-template-rows: 96px 64px;
   grid-column-gap: 20px;
-  margin: 0px;
 }
 
 nav > img {
-  margin: auto;
-  padding: 2px;
   width: 100%;
-  max-height: 100%;
+  max-height: 92px;
+  margin: auto;
 }
 
 nav > ul {
@@ -86,7 +84,7 @@ footer > div > img {
 main {
   background-color: #495e57;
   display: grid;
-  grid-template-columns: 5fr 1fr 4fr;
+  grid-template-columns: 6fr 4fr;
   grid-template-rows: 400px;
   grid-column-gap: 20px;
 }
@@ -96,6 +94,7 @@ main {
   grid-template-columns: 4fr 1fr;
   grid-template-rows: 128px;
   margin: auto;
+  align-items: center;
 }
 
 .specialsHeader > div {
@@ -105,9 +104,13 @@ main {
 .specialsMain {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 672px;
+  grid-template-rows: 432px;
   margin: auto;
   grid-column-gap: 40px;
+}
+
+.specialsMain > div {
+  height: 400px;
 }
 
 .specialsMain > div {
@@ -124,8 +127,13 @@ main {
   margin: 10px 10px 10px 10px;
 }
 
+main {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 main > div {
-  padding: 16px;
+  padding: 0px;
 }
 
 main > div > img {
@@ -155,17 +163,26 @@ main > div > img {
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-family: "Markazi Text", serif;
+  font-size: 64px;
+  font-weight: 500;
 }
 .tbRating {
   grid-column: 1 / 3;
   grid-row: 1;
   margin: auto;
+  font-family: Karla, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .tbReview {
   grid-column: 1 / 3;
   grid-row: 3;
   margin: auto;
+  font-family: Karla, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .tbImage {
@@ -180,6 +197,9 @@ main > div > img {
   grid-column: 2;
   grid-row: 2;
   margin: auto;
+  font-family: Karla, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .testimonialsBox {
@@ -190,6 +210,8 @@ main > div > img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 64px 80px 96px;
+  border-width: 0px;
+  background-color: white;
 }
 
 .testimonialsBox > p {
@@ -202,25 +224,85 @@ form {
   gap: 20px;
 }
 
+.specialsHeader > h1 {
+  font-family: "Markazi Text", serif;
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.specialsItemHeader {
+  font-family: "Markazi Text", serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.specialsItemPrice {
+  font-family: "Markazi Text", serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ee9972;
+}
+
+.headerTitle {
+  font-family: "Markazi Text", serif;
+  font-size: 64px;
+  color: #f4ce14;
+  font-weight: 500;
+}
+
+.headerSubtitle {
+  font-family: "Markazi Text", serif;
+  font-size: 32px;
+  color: white;
+  font-weight: 400;
+}
+
+.headerText {
+  font-family: Karla, sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+
+main > div > button {
+  background-color: #f4ce14;
+  border-width: 0px;
+  height: 60px;
+  width: 200px;
+  border-radius: 16px;
+  font-family: Karla, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.specialsHeader > div > button {
+  background-color: #f4ce14;
+  border-width: 0px;
+  height: 60px;
+  width: 200px;
+  border-radius: 16px;
+  font-family: Karla, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: auto;
+}
+
 @media only screen and (min-width: 960px) {
   nav {
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 96px;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding: 0 calc((100% - 960px) / 2);
   }
 
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 400px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0 calc((100% - 960px) / 2);
   }
 
   main {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0 calc((100% - 960px) / 2);
   }
 
   footer > div > img {
@@ -228,17 +310,14 @@ form {
   }
 
   .specialsHeader {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0 calc((100% - 960px) / 2);
   }
 
   .specialsMain {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0 calc((100% - 960px) / 2);
   }
 
   .testimonialsMain {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0 calc((100% - 960px) / 2);
   }
 }

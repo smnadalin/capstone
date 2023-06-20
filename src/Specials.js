@@ -14,8 +14,8 @@ function Specials() {
       <div className="specialsMain">
         <div>
           <img src={greekSaladImage} alt="Greek Salad" />
-          <p>Greek Salad</p>
-          <p>$12.99</p>
+          <p className="specialsItemHeader">Greek Salad</p>
+          <p className="specialsItemPrice">$12.99</p>
           <p>
             The famous greek salad of crispy lettuce, peppers, olives and our
             Chicago style feta cheese, garnished with crunchy garlic and
@@ -24,8 +24,8 @@ function Specials() {
         </div>
         <div>
           <img src={bruschettaImage} alt="Bruschetta" />
-          <p>Bruschetta</p>
-          <p>$5.99</p>
+          <p className="specialsItemHeader">Bruschetta</p>
+          <p className="specialsItemPrice">$5.99</p>
           <p>
             Our Bruschetta is made from grilled bread that has been smeared with
             garlic and seasoned with salt and olive oil.
@@ -33,8 +33,8 @@ function Specials() {
         </div>
         <div>
           <img src={lemonImage} alt="Lemon Dessert" />
-          <p>Lemon Dessert</p>
-          <p>$5.00</p>
+          <p className="specialsItemHeader">Lemon Dessert</p>
+          <p className="specialsItemPrice">$5.00</p>
           <p>
             This comes straight from grandma’s recipe book, every last
             ingredient has been sourced and is as authentic as can be imagined.
