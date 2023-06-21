@@ -287,6 +287,79 @@ main > div > button {
   margin: auto;
 }
 
+form {
+  margin: auto;
+  padding: 16px;
+  gap: 8px;
+  text-align: center;
+  width: 960px;
+  margin-bottom: 16px;
+}
+
+label {
+  font-family: Karla, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+form > p {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+form > input {
+  text-align: center;
+}
+
+form > select {
+  text-align: center;
+}
+
+input {
+  height: 60px;
+  width: 200px;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 16px;
+  font-family: Karla, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.submitButton {
+  background-color: #f4ce14;
+  border-width: 0px;
+  height: 60px;
+  width: 200px;
+  border-radius: 16px;
+  font-family: Karla, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: auto;
+  margin-top: 32px;
+}
+
+select {
+  height: 60px;
+  width: 200px;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 16px;
+  font-family: Karla, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.bookingFormHeader {
+  font-family: "Markazi Text", serif;
+  font-size: 64px;
+  font-weight: 500;
+  margin: auto;
+  text-align: center;
+  margin-top: 16px;
+}
+
 @media only screen and (min-width: 960px) {
   nav {
     grid-template-columns: 1fr 3fr;
