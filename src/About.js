@@ -4,7 +4,7 @@ import chefsImage2 from "./Images/Mario and Adrian b.jpg";
 function About() {
   return (
     <section className="about">
-      <div>
+      <div className="aboutWrittenSection">
         <h1 className="aboutTitle">Little Lemon</h1>
         <p className="aboutSubtitle">Chicago</p>
         <p className="aboutText">
@@ -15,10 +15,12 @@ function About() {
           sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
           amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          labore et dolore magna aliqua.
+          <br /> <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+          <br /> <br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
       <img

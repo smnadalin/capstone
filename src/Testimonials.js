@@ -5,7 +5,7 @@ function Testimonials() {
     <>
       <h1 className="testimonialsHeading">Testimonials</h1>
       <div className="testimonialsMain">
-        <TestimonialBox />
+        <TestimonialBox image="./Images/review1.jpg" />
         <TestimonialBox />
         <TestimonialBox />
         <TestimonialBox />
