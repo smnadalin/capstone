@@ -1,4 +1,4 @@
-import logo from "./Images/logo_vertical.png";
+import logo from "./Images/logoMono.png";
 
 function Footer() {
   const doormatNavigationItems = [

@@ -1,4 +1,5 @@
 import heroImage from "./Images/restauranfood.jpg";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -11,7 +12,9 @@ function Header() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <button>Reserve a Table</button>
+          <Link to="/booking">
+            <button className="headerButton">Reserve a Table</button>
+          </Link>
         </div>
         <div>
           <img src={heroImage} alt="Plate of food"></img>

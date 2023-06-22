@@ -7,11 +7,14 @@ function BookingForm({ availableTimes, setAvailableTimes, submitForm }) {
   const [occasion, setOccasion] = useState("Birthday");
   const [dateValid, setDateValid] = useState(false);
   const [guestsValid, setGuestsValid] = useState(true);
+  const [resTimeValid, setResTimeValid] = useState(true);
+  const [occasionValid, setOccasionValid] = useState(true);
   const [resDateTouched, setResDateTouched] = useState(false);
+  const availableOccasions = ["Birthday", "Anniversary"];
 
   function handleSubmit(event) {
     event.preventDefault();
-    if (dateValid && guestsValid) {
+    if (dateValid && guestsValid && resTimeValid && occasionValid) {
       submitForm({
         date: resDate,
         time: resTime,
@@ -38,6 +41,22 @@ function BookingForm({ availableTimes, setAvailableTimes, submitForm }) {
       setGuestsValid(true);
     } else {
       setGuestsValid(false);
+    }
+  }
+
+  function checkResTime(timeInput) {
+    if (availableTimes.find((e) => e === timeInput) === undefined) {
+      setResTimeValid(false);
+    } else {
+      setResTimeValid(true);
+    }
+  }
+
+  function checkOccasion(occasionInput) {
+    if (availableOccasions.find((e) => e === occasionInput) === undefined) {
+      setOccasionValid(false);
+    } else {
+      setOccasionValid(true);
     }
   }
 
@@ -72,13 +91,22 @@ function BookingForm({ availableTimes, setAvailableTimes, submitForm }) {
         <select
           id="res-time"
           aria-label="Reservation time"
-          onChange={(e) => setResTime(e.target.value)}
+          onChange={(e) => {
+            setResTime(e.target.value);
+            checkResTime(e.target.value);
+          }}
           value={resTime}
+          style={
+            resTimeValid ? { borderColor: "black" } : { borderColor: "red" }
+          }
         >
           {availableTimes.map((time) => (
             <option key={time}>{time}</option>
           ))}
         </select>
+        {!resTimeValid ? (
+          <p style={{ color: "red" }}>The selected time is not available</p>
+        ) : null}
         <label htmlFor="guests">Number of guests:</label>
         <input
           type="number"
@@ -103,17 +131,31 @@ function BookingForm({ availableTimes, setAvailableTimes, submitForm }) {
         <select
           id="occasion"
           aria-label="Occasion"
-          onChange={(e) => setOccasion(e.target.value)}
+          onChange={(e) => {
+            setOccasion(e.target.value);
+            checkOccasion(e.target.value);
+          }}
           value={occasion}
+          style={
+            occasionValid ? { borderColor: "black" } : { borderColor: "red" }
+          }
         >
           <option>Birthday</option>
           <option>Anniversary</option>
         </select>
+        {!occasionValid ? (
+          <p style={{ color: "red" }}>Select an occasion from the drop down</p>
+        ) : null}
         <input
           className="submitButton"
           type="submit"
           aria-label="Submit"
           value="Make your reservation"
+          style={
+            dateValid && guestsValid && resTimeValid && occasionValid
+              ? {}
+              : { backgroundColor: "gainsboro", color: "grey" }
+          }
         />
       </form>
     </>
