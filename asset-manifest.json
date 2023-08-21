@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/https//smnadalin.github.io/capstone/static/css/main.7204d4f8.css",
-    "main.js": "/https//smnadalin.github.io/capstone/static/js/main.bb308fe6.js",
-    "static/js/787.3ecd7fac.chunk.js": "/https//smnadalin.github.io/capstone/static/js/787.3ecd7fac.chunk.js",
-    "static/media/Mario and Adrian A.jpg": "/https//smnadalin.github.io/capstone/static/media/Mario and Adrian A.7f44c6d6e341a27d14b3.jpg",
-    "static/media/Mario and Adrian b.jpg": "/https//smnadalin.github.io/capstone/static/media/Mario and Adrian b.6ba0e06bfa9c1ea75109.jpg",
-    "static/media/bruchetta.svg": "/https//smnadalin.github.io/capstone/static/media/bruchetta.29ea078fea3d3120ed22402e901b5bbc.svg",
-    "static/media/greek salad.jpg": "/https//smnadalin.github.io/capstone/static/media/greek salad.bed423a1fab5b210e347.jpg",
-    "static/media/restauranfood.jpg": "/https//smnadalin.github.io/capstone/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
-    "static/media/Logo.svg": "/https//smnadalin.github.io/capstone/static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
-    "static/media/logoMono.png": "/https//smnadalin.github.io/capstone/static/media/logoMono.c43f4142a6599f8b71cf.png",
-    "static/media/icon _eye_.svg": "/https//smnadalin.github.io/capstone/static/media/icon _eye_.2621d0c077dcfa9185089540be7438ea.svg",
-    "index.html": "/https//smnadalin.github.io/capstone/index.html",
-    "main.7204d4f8.css.map": "/https//smnadalin.github.io/capstone/static/css/main.7204d4f8.css.map",
-    "main.bb308fe6.js.map": "/https//smnadalin.github.io/capstone/static/js/main.bb308fe6.js.map",
-    "787.3ecd7fac.chunk.js.map": "/https//smnadalin.github.io/capstone/static/js/787.3ecd7fac.chunk.js.map"
+    "main.css": "/capstone/static/css/main.7204d4f8.css",
+    "main.js": "/capstone/static/js/main.bbbedb41.js",
+    "static/js/787.3ecd7fac.chunk.js": "/capstone/static/js/787.3ecd7fac.chunk.js",
+    "static/media/Mario and Adrian A.jpg": "/capstone/static/media/Mario and Adrian A.7f44c6d6e341a27d14b3.jpg",
+    "static/media/Mario and Adrian b.jpg": "/capstone/static/media/Mario and Adrian b.6ba0e06bfa9c1ea75109.jpg",
+    "static/media/bruchetta.svg": "/capstone/static/media/bruchetta.29ea078fea3d3120ed22402e901b5bbc.svg",
+    "static/media/greek salad.jpg": "/capstone/static/media/greek salad.bed423a1fab5b210e347.jpg",
+    "static/media/restauranfood.jpg": "/capstone/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
+    "static/media/Logo.svg": "/capstone/static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
+    "static/media/logoMono.png": "/capstone/static/media/logoMono.c43f4142a6599f8b71cf.png",
+    "static/media/icon _eye_.svg": "/capstone/static/media/icon _eye_.2621d0c077dcfa9185089540be7438ea.svg",
+    "index.html": "/capstone/index.html",
+    "main.7204d4f8.css.map": "/capstone/static/css/main.7204d4f8.css.map",
+    "main.bbbedb41.js.map": "/capstone/static/js/main.bbbedb41.js.map",
+    "787.3ecd7fac.chunk.js.map": "/capstone/static/js/787.3ecd7fac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7204d4f8.css",
-    "static/js/main.bb308fe6.js"
+    "static/js/main.bbbedb41.js"
   ]
 }
