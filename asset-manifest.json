@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/https//smnadalin.github.io/capstone/static/css/main.7204d4f8.css",
-    "main.js": "/https//smnadalin.github.io/capstone/static/js/main.a7a410f7.js",
+    "main.js": "/https//smnadalin.github.io/capstone/static/js/main.bb308fe6.js",
     "static/js/787.3ecd7fac.chunk.js": "/https//smnadalin.github.io/capstone/static/js/787.3ecd7fac.chunk.js",
     "static/media/Mario and Adrian A.jpg": "/https//smnadalin.github.io/capstone/static/media/Mario and Adrian A.7f44c6d6e341a27d14b3.jpg",
     "static/media/Mario and Adrian b.jpg": "/https//smnadalin.github.io/capstone/static/media/Mario and Adrian b.6ba0e06bfa9c1ea75109.jpg",
@@ -13,11 +13,11 @@
     "static/media/icon _eye_.svg": "/https//smnadalin.github.io/capstone/static/media/icon _eye_.2621d0c077dcfa9185089540be7438ea.svg",
     "index.html": "/https//smnadalin.github.io/capstone/index.html",
     "main.7204d4f8.css.map": "/https//smnadalin.github.io/capstone/static/css/main.7204d4f8.css.map",
-    "main.a7a410f7.js.map": "/https//smnadalin.github.io/capstone/static/js/main.a7a410f7.js.map",
+    "main.bb308fe6.js.map": "/https//smnadalin.github.io/capstone/static/js/main.bb308fe6.js.map",
     "787.3ecd7fac.chunk.js.map": "/https//smnadalin.github.io/capstone/static/js/787.3ecd7fac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7204d4f8.css",
-    "static/js/main.a7a410f7.js"
+    "static/js/main.bb308fe6.js"
   ]
 }
