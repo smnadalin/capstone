@@ -14,34 +14,65 @@
 }
 
 nav {
+  background-color: white;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0px 5px 8px hsl(0, 0%, 50%);
+}
+
+.navContent {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 96px 64px;
   grid-column-gap: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
-nav > img {
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.heroContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2; /* Set a higher z-index to position the content above the overlay */
+}
+
+.navContent > img {
   width: 100%;
   max-height: 92px;
   margin: auto;
+  z-index: 2;
 }
 
-nav > ul {
+.bookingForm {
+  padding-top: 160px;
+}
+
+.navContent > ul {
   list-style-type: none;
-  margin: auto;
   padding: 0;
+  margin: auto;
 }
 
-nav > ul > li {
+.navContent > ul > li {
   display: inline-block;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   text-decoration: none;
   font-size: 18px;
   font-family: Karla, sans-serif;
   font-weight: 500;
+  color: black;
 }
 
 footer {
@@ -89,17 +120,15 @@ footer > div > img {
 
 main {
   background-color: #495e57;
-  display: grid;
-  grid-template-columns: 6fr 4fr;
-  grid-template-rows: 400px;
-  grid-column-gap: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin: auto;
 }
 
-.headerWrittenSection {
-  margin: auto;
+.heroSection {
+  position: relative;
+  height: 80vh;
+  background-image: url("Images/steak.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .specialsHeader {
@@ -148,7 +177,6 @@ main {
 
 main {
   padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 main > div {
@@ -265,15 +293,15 @@ form {
   color: #ee9972;
 }
 
-.headerTitle {
+.heroTitle {
   font-family: "Markazi Text", serif;
-  font-size: 64px;
+  font-size: 96px;
   color: #f4ce14;
   font-weight: 500;
   margin: auto;
 }
 
-.headerSubtitle {
+.heroSubtitle {
   font-family: "Markazi Text", serif;
   font-size: 32px;
   color: white;
@@ -281,14 +309,14 @@ form {
   margin: auto;
 }
 
-.headerText {
+.heroText {
   font-family: Karla, sans-serif;
   font-size: 18px;
   color: white;
   font-weight: 500;
 }
 
-.headerButton {
+.heroButton {
   background-color: #f4ce14;
   border-width: 0px;
   height: 60px;
@@ -299,7 +327,7 @@ form {
   font-weight: 500;
 }
 
-.headerButton:hover {
+.heroButton:hover {
   border: 2px solid black;
 }
 
@@ -486,10 +514,18 @@ footer > div > ul > li {
 }
 
 @media only screen and (min-width: 960px) {
-  nav {
+  .navContent {
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 96px;
     padding: 0 calc((100% - 960px) / 2);
+  }
+
+  .bookingForm {
+    padding-top: 96px;
+  }
+
+  .navContent > ul {
+    margin: auto 0 auto auto;
   }
 
   .about {
@@ -530,7 +566,7 @@ footer > div > ul > li {
   }
 
   main {
-    padding: 0 calc((100% - 960px) / 2);
+    padding: 0 0;
   }
 
   footer > div > img {

@@ -1,6 +1,6 @@
 import face from "./Images/icon _eye_.svg";
 
-function TestimonialBox() {
+function TestimonialBox({ imageSrc, text, author }) {
   return (
     <>
       <div className="testimonialsBox">

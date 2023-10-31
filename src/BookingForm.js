@@ -61,7 +61,7 @@ function BookingForm({ availableTimes, setAvailableTimes, submitForm }) {
   }
 
   return (
-    <>
+    <div className="bookingForm">
       <h1 className="bookingFormHeader">Make a Reservation</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="res-date">Choose date:</label>
@@ -158,7 +158,7 @@ function BookingForm({ availableTimes, setAvailableTimes, submitForm }) {
           }
         />
       </form>
-    </>
+    </div>
   );
 }
 

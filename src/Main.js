@@ -1,6 +1,8 @@
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Booking from "./Booking";
 import HomePage from "./HomePage";
+import Menu from "./Menu";
+import Contact from "./Contact";
 import ConfirmedBooking from "./ConfirmedBooking";
 import { useReducer } from "react";
 import { fetchAPI, submitAPI } from "./API/api";
@@ -43,6 +45,8 @@ function Main() {
         }
       ></Route>
       <Route path="/booking/confirmed" element={<ConfirmedBooking />}></Route>
+      <Route path="/contact" element={<Contact />}></Route>
+      <Route path="/menu" element={<Menu />}></Route>
     </Routes>
   );
 }
