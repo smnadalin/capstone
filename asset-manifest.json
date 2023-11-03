@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/capstone/static/css/main.7c6c0bf1.css",
-    "main.js": "/capstone/static/js/main.7c98f4af.js",
+    "main.css": "/capstone/static/css/main.0d1f5f09.css",
+    "main.js": "/capstone/static/js/main.1b28177b.js",
     "static/js/787.3ecd7fac.chunk.js": "/capstone/static/js/787.3ecd7fac.chunk.js",
     "static/media/Mario and Adrian A.jpg": "/capstone/static/media/Mario and Adrian A.7f44c6d6e341a27d14b3.jpg",
     "static/media/Mario and Adrian b.jpg": "/capstone/static/media/Mario and Adrian b.6ba0e06bfa9c1ea75109.jpg",
@@ -9,16 +9,20 @@
     "static/media/greek salad.jpg": "/capstone/static/media/greek salad.bed423a1fab5b210e347.jpg",
     "static/media/restauranfood.jpg": "/capstone/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
     "static/media/steak.jpg": "/capstone/static/media/steak.de2b6644b1315cdce5f0.jpg",
+    "static/media/review3.png": "/capstone/static/media/review3.572a6775b66d7fcf92e0.png",
+    "static/media/review4.png": "/capstone/static/media/review4.9b31cec17a2eb76ad776.png",
+    "static/media/review2.png": "/capstone/static/media/review2.aa858e278c28b9aa099e.png",
+    "static/media/review1.png": "/capstone/static/media/review1.778be553a7d5cceadb3e.png",
     "static/media/Logo.svg": "/capstone/static/media/Logo.2c379c7ea7eb07402bfc7700915316de.svg",
     "static/media/logoMono.png": "/capstone/static/media/logoMono.c43f4142a6599f8b71cf.png",
-    "static/media/icon _eye_.svg": "/capstone/static/media/icon _eye_.f5f2f6f607484be3078ad3e8d63da11a.svg",
+    "static/media/instagram.png": "/capstone/static/media/instagram.61037676d9d06f807ff3.png",
     "index.html": "/capstone/index.html",
-    "main.7c6c0bf1.css.map": "/capstone/static/css/main.7c6c0bf1.css.map",
-    "main.7c98f4af.js.map": "/capstone/static/js/main.7c98f4af.js.map",
+    "main.0d1f5f09.css.map": "/capstone/static/css/main.0d1f5f09.css.map",
+    "main.1b28177b.js.map": "/capstone/static/js/main.1b28177b.js.map",
     "787.3ecd7fac.chunk.js.map": "/capstone/static/js/787.3ecd7fac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c6c0bf1.css",
-    "static/js/main.7c98f4af.js"
+    "static/css/main.0d1f5f09.css",
+    "static/js/main.1b28177b.js"
   ]
 }
