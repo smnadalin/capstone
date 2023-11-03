@@ -1,9 +1,31 @@
 import chefsImage1 from "./Images/Mario and Adrian A.jpg";
 import chefsImage2 from "./Images/Mario and Adrian b.jpg";
+import { useState, useEffect } from "react";
 
 function About() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const scrollThreshold = 900;
+
+      if (scrollY > scrollThreshold) {
+        setIsScrolled(true);
+      }
+    };
+
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <section className="about">
+    <section className={`about ${isScrolled ? "fade-in" : ""}`}>
       <div className="aboutWrittenSection">
         <h1 className="aboutTitle">Little Lemon</h1>
         <p className="aboutSubtitle">Chicago</p>

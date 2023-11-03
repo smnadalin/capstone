@@ -1,17 +1,39 @@
 import greekSaladImage from "./Images/greek salad.jpg";
 import bruschettaImage from "./Images/bruchetta.svg";
 import lemonImage from "./Images/lemon dessert.jpg";
+import { useState, useEffect } from "react";
 
 function Specials() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const scrollThreshold = 50;
+
+      if (scrollY > scrollThreshold) {
+        setIsScrolled(true);
+      }
+    };
+
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <div className="specialsHeader">
+      <div className={`specialsHeader ${isScrolled ? "fade-in" : ""}`}>
         <h1>Specials</h1>
         <div>
           <button>Online Menu</button>
         </div>
       </div>
-      <div className="specialsMain">
+      <div className={`specialsMain ${isScrolled ? "fade-in" : ""}`}>
         <div>
           <img src={greekSaladImage} alt="Greek Salad" />
           <p className="specialsItemHeader">Greek Salad</p>
