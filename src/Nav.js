@@ -2,8 +2,11 @@ import logo from "./Images/Logo.svg";
 import { Link } from "react-router-dom";
 
 function Nav() {
-  const hyperlinkNames = ["Home", "Menu", "Contact", "Reservations"];
-  const hyperlinkPage = ["/", "/", "/", "/booking"];
+  const hyperlinkNames = ["Home", "Contact", "Reservations"];
+  const hyperlinkPage = ["/", "/contact", "/booking"];
+
+  // const hyperlinkNames = ["Home", "Menu", "Contact", "Reservations"];
+  // const hyperlinkPage = ["/", "/menu", "/contact", "/booking"];
   return (
     <nav>
       <div className="navContent">

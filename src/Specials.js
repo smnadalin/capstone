@@ -29,9 +29,9 @@ function Specials() {
     <>
       <div className={`specialsHeader ${isScrolled ? "fade-in" : ""}`}>
         <h1>Specials</h1>
-        <div>
+        {/* <div>
           <button>Online Menu</button>
-        </div>
+        </div> */}
       </div>
       <div className={`specialsMain ${isScrolled ? "fade-in" : ""}`}>
         <div>

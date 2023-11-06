@@ -8,8 +8,11 @@ import email from "./Images/email.png";
 import address from "./Images/address.png";
 
 function Footer() {
-  const doormatNavigationItems = ["Home", "Menu", "Contact", "Reservations"];
-  const doormatNavigationLinks = ["/", "/", "/", "/booking"];
+  const doormatNavigationItems = ["Home", "Contact", "Reservations"];
+  const doormatNavigationLinks = ["/", "/contact", "/booking"];
+
+  // const doormatNavigationItems = ["Home", "Menu", "Contact", "Reservations"];
+  // const doormatNavigationLinks = ["/", "/menu", "/contact", "/booking"];
 
   const contact = [
     {

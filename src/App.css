@@ -347,7 +347,7 @@ form {
 }
 
 .heroButton:hover {
-  border: 2px solid black;
+  background-color: hsl(50, 100%, 62%);
 }
 
 .specialsHeader > div > button {
@@ -476,7 +476,7 @@ select {
   font-family: "Markazi Text", serif;
   font-size: 64px;
   font-weight: 500;
-  color: #495e57;
+  color: #4a5e58;
   padding: 0px;
   margin: 0px;
 }
@@ -518,6 +518,11 @@ footer > div > ul > li {
   justify-content: center;
 }
 
+.contactPageListItem {
+  display: flex;
+  justify-content: left;
+}
+
 .contactIcons {
   margin-right: 6px;
 }
@@ -552,7 +557,81 @@ footer > div > ul > li {
   padding: 0px 10px;
 }
 
+.contactContainer {
+  padding-top: 160px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contactContents {
+  margin-top: 10px;
+}
+
+.contactContents > div > ul {
+  list-style-type: none;
+}
+
+.contactContainer > h1 {
+  font-family: "Markazi Text", serif;
+  font-size: 64px;
+  font-weight: 500;
+  margin: auto;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.contactContents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px;
+}
+
+.contactContents > div {
+  padding: 10px;
+}
+
+.contactSubtitle {
+  font-family: "Markazi Text", serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  margin-top: 40px;
+}
+
+.contactContents > div > ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.contactContents > div > ul > li {
+  font-size: 18px;
+  font-family: Karla, sans-serif;
+  font-weight: 500;
+  color: black;
+  padding-top: 6px;
+}
+
+.openingTimes li {
+  display: flex;
+  align-items: center;
+}
+
+.openingTimes li span {
+  margin-right: 10px; /* Adjust the spacing as needed */
+  width: 100px; /* Set a fixed width for alignment */
+  display: inline-block;
+}
+
 @media only screen and (min-width: 960px) {
+  .contactContents {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 400px;
+  }
+  .contactContainer {
+    padding: 96px calc((100% - 960px) / 2) 40px calc((100% - 960px) / 2);
+  }
+
   .footerSocialMediaContainer {
     display: flex;
     flex-direction: column;
@@ -582,6 +661,11 @@ footer > div > ul > li {
   }
 
   .contactListItem {
+    display: flex;
+    justify-content: left;
+  }
+
+  .contactPageListItem {
     display: flex;
     justify-content: left;
   }
