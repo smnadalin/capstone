@@ -12,7 +12,6 @@ function Nav() {
           {hyperlinkNames.map((e, index) => (
             <li key={e}>
               <Link
-                style={{ color: "inherit", textDecoration: "inherit" }}
                 to={hyperlinkPage[index]}
                 style={{ color: "inherit", textDecoration: "inherit" }}
                 role="Navigation"

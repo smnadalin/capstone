@@ -79,7 +79,7 @@ footer {
   background-color: #495e57;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 200px 192px 128px 144 px;
+  grid-template-rows: 200px 192px 160px 120px;
   grid-column-gap: 20px;
   padding-left: 20px;
   padding-right: 20px;
@@ -87,7 +87,7 @@ footer {
   padding-bottom: 16px;
 }
 
-footer > div {
+.footerImageContainer {
   margin: auto;
 }
 
@@ -98,18 +98,11 @@ footer > div > ul {
 }
 
 footer > div > p {
-  font-size: 20px;
   text-align: center;
   font-weight: 800;
   font-family: Karla, sans-serif;
   color: white;
-}
-
-footer > div > ul > li {
-  font-size: 20px;
-  text-align: center;
-  font-family: Karla, sans-serif;
-  color: white;
+  font-size: 18px;
 }
 
 footer > div > img {
@@ -461,29 +454,19 @@ select {
   transition: opacity 0.5s ease-in-out;
 }
 
-.about.fade-in {
-  opacity: 1;
-}
-
 .aboutWrittenSection {
   grid-column: 1 / 5;
   grid-row: 1;
 }
 
 .aboutImageBottom {
-  grid-column: 1 / 4;
-  grid-row: 2;
-  object-fit: cover;
-  padding-top: 64px;
-  position: relative;
-  margin: auto;
+  display: none;
 }
 
 .aboutImageTop {
-  grid-column: 2 / 5;
+  grid-column: 1 / 5;
   grid-row: 2;
   object-fit: cover;
-  padding-bottom: 64px;
   position: relative;
   z-index: 1;
   margin: auto;
@@ -509,7 +492,7 @@ select {
 .aboutText {
   font-size: 20px;
   font-family: Karla, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .about > img {
@@ -517,16 +500,26 @@ select {
   height: 384px;
 }
 
-footer > div > p {
-  font-size: 18px;
-  font-family: Karla, sans-serif;
-  font-weight: 800;
+.about.fade-in {
+  opacity: 1;
 }
 
 footer > div > ul > li {
   font-size: 18px;
   font-family: Karla, sans-serif;
   font-weight: 500;
+  color: white;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.contactListItem {
+  display: flex;
+  justify-content: center;
+}
+
+.contactIcons {
+  margin-right: 6px;
 }
 
 .bookingConfirmed {
@@ -545,7 +538,54 @@ footer > div > ul > li {
   text-align: center;
 }
 
+.navigationListItem {
+  display: block;
+}
+
+.footerSocialMediaContainer {
+  text-align: center;
+}
+
+.socialMediaListItem {
+  text-align: center;
+  display: inline-block;
+  padding: 0px 10px;
+}
+
 @media only screen and (min-width: 960px) {
+  .footerSocialMediaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .socialMediaListItem {
+    display: block;
+    padding: 0px 0px 10px 0px;
+  }
+
+  footer > div > p {
+    text-align: left;
+  }
+
+  footer > div > ul > li {
+    text-align: left;
+  }
+
+  .footerSocialMediaContainer > p {
+    text-align: center;
+  }
+
+  footer > div {
+    margin-top: 70px;
+  }
+
+  .contactListItem {
+    display: flex;
+    justify-content: left;
+  }
+
   .navContent {
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 96px;
@@ -572,6 +612,7 @@ footer > div > ul > li {
   }
 
   .aboutImageBottom {
+    display: block;
     margin: auto;
     grid-column: 9 / 13;
     grid-row: 1;
@@ -592,7 +633,7 @@ footer > div > ul > li {
 
   footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1.4fr 0.6fr;
     grid-template-rows: 400px;
     padding: 0 calc((100% - 960px) / 2);
   }

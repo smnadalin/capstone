@@ -10,11 +10,22 @@ import address from "./Images/address.png";
 function Footer() {
   const doormatNavigationItems = ["Home", "Menu", "Contact", "Reservations"];
   const doormatNavigationLinks = ["/", "/", "/", "/booking"];
-  const contactItems = [
-    "Address: 123 Main Street, Chicago, IL 60601",
-    "Phone: (555) 123-4567",
-    "Email: mario@littlelemon.com",
+
+  const contact = [
+    {
+      text: "123 Main Street, Chicago, IL 60601",
+      image: address,
+    },
+    {
+      text: "(555) 123-4567",
+      image: phone,
+    },
+    {
+      text: "mario@littlelemon.com",
+      image: email,
+    },
   ];
+
   const socialMedia = [
     {
       image: facebook,
@@ -34,14 +45,14 @@ function Footer() {
   ];
   return (
     <footer>
-      <div>
+      <div className="footerImageContainer">
         <img src={logo} alt="Logo" width="60%"></img>
       </div>
-      <div>
+      <div className="footerNavigationContainer">
         <p>Links</p>
         <ul>
           {doormatNavigationItems.map((e, index) => (
-            <li key={e}>
+            <li key={e} className="navigationListItem">
               <Link
                 style={{ color: "inherit" }}
                 to={doormatNavigationLinks[index]}
@@ -54,19 +65,27 @@ function Footer() {
           ))}
         </ul>
       </div>
-      <div>
+      <div className="footerContactContainer">
         <p>Contact</p>
         <ul>
-          {contactItems.map((e) => (
-            <li key={e}>{e}</li>
+          {contact.map((e) => (
+            <li key={e.text} className="contactListItem">
+              <img
+                className="contactIcons"
+                src={e.image}
+                style={{ width: "20px", height: "20px" }}
+                alt={e.text}
+              ></img>
+              {e.text}
+            </li>
           ))}
         </ul>
       </div>
-      <div>
-        <p>Social Media</p>
+      <div className="footerSocialMediaContainer">
+        <p>Follow Us</p>
         <ul>
           {socialMedia.map((e) => (
-            <li key={e.alt}>
+            <li key={e.alt} className="socialMediaListItem">
               <a href={e.links} target="_blank">
                 <img
                   src={e.image}
