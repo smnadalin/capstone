@@ -119,7 +119,7 @@ main {
 .heroSection {
   position: relative;
   height: 80vh;
-  background-image: url("Images/steak.jpg");
+  background-image: url("Images/steak.png");
   background-size: cover;
   background-position: center;
 }
@@ -174,14 +174,22 @@ main {
   border-radius: 16px 16px 0px 0px;
 }
 
-.menuContainer {
-  padding-top: 160px;
-}
-
-.menuContainer > div {
-  width: 200px;
+.menuItemContainer {
+  background-color: #edefee;
+  width: 300px;
   height: 400px;
   border-radius: 16px 16px 0px 0px;
+  margin: 10px;
+}
+
+.menuContainer {
+  padding-top: 160px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menuSectionContainer {
+  display: flex;
 }
 
 .specialsMain > div {
@@ -206,19 +214,26 @@ main {
   font-family: "Markazi Text", serif;
   font-size: 64px;
   font-weight: 500;
+  text-align: center;
 }
 
 .menuItemHeader {
   font-family: "Markazi Text", serif;
   font-size: 24px;
   font-weight: 500;
+  margin: 10px;
 }
 
-.smenuItemPrice {
+.menuItemPrice {
   font-family: "Markazi Text", serif;
   font-size: 24px;
   font-weight: 700;
   color: #ee9972;
+  margin: 10px;
+}
+
+.menuItemDescription {
+  margin: 10px;
 }
 
 .specialsMain > div > p {
@@ -660,7 +675,6 @@ footer > div > ul > li {
 
 @media only screen and (min-width: 960px) {
   .menuContainer {
-    padding-top: 96px;
   }
   .contactContents {
     display: grid;
@@ -779,5 +793,9 @@ footer > div > ul > li {
 
   .testimonialsMain {
     padding: 0 calc((100% - 960px) / 2);
+  }
+
+  .menuContainer {
+    padding: 96px calc((100% - 960px) / 2) 0px calc((100% - 960px) / 2);
   }
 }

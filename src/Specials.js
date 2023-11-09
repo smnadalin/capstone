@@ -1,6 +1,6 @@
-import greekSaladImage from "./Images/greek salad.jpg";
-import bruschettaImage from "./Images/bruchetta.svg";
-import lemonImage from "./Images/lemon dessert.jpg";
+import greekSaladImage from "./Images/greek salad.png";
+import bruschettaImage from "./Images/bruchetta.png";
+import lemonImage from "./Images/lemon dessert.png";
 import { useState, useEffect } from "react";
 
 function Specials() {

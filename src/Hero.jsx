@@ -1,6 +1,4 @@
-import heroImage from "./Images/restauranfood.jpg";
 import { Link } from "react-router-dom";
-import Nav from "./Nav";
 
 function Hero() {
   return (

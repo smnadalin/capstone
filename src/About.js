@@ -1,5 +1,5 @@
-import chefsImage1 from "./Images/Mario and Adrian A.jpg";
-import chefsImage2 from "./Images/Mario and Adrian b.jpg";
+import chefsImage1 from "./Images/Mario and Adrian A.png";
+import chefsImage2 from "./Images/Mario and Adrian b.png";
 import { useState, useEffect } from "react";
 
 function About() {
