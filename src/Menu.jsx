@@ -28,36 +28,40 @@ function Menu() {
   const mains = [
     {
       name: "Steak",
-      price: "$",
-      description: "",
+      price: "$24.99",
+      description:
+        "Premium cut steak grilled to perfection, served with your choice of side dishes.",
       image: steakImage,
     },
     {
       name: "Seafood Linguini",
-      price: "$",
-      description: "",
+      price: "$18.99",
+      description:
+        "Delicious linguini pasta served with a variety of fresh seafood in a savory sauce.",
       image: seafoodLinguineImage,
     },
     {
       name: "Lamb Souvlaki",
-      price: "$",
-      description: "",
+      price: "$14.99",
+      description:
+        "Tender lamb skewers marinated in Mediterranean herbs and spices, grilled to perfection.",
       image: souvlakiImage,
     },
   ];
 
   const desserts = [
     {
-      naeme: "Lemon Dessert",
+      name: "Lemon Dessert",
       price: "$5.00",
       description:
         "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
       image: lemonImage,
     },
     {
-      naeme: "Tiramisu",
-      price: "$",
-      description: "",
+      name: "Tiramisu",
+      price: "$8.99",
+      description:
+        "Classic Italian tiramisu with layers of coffee-soaked ladyfingers and mascarpone cream.",
       image: tiramisuImage,
     },
   ];
@@ -73,20 +77,31 @@ function Menu() {
             description={e.description}
             price={e.price}
             name={e.name}
+            key={e.name}
           />
         ))}
       </div>
       <h2 className="menuSubheader">Mains</h2>
-      <div className="menuSectionContainer"></div>
+      <div className="menuSectionContainer">
+        {mains.map((e) => (
+          <MenuItem
+            image={e.image}
+            description={e.description}
+            price={e.price}
+            name={e.name}
+            key={e.name}
+          />
+        ))}
+      </div>
       <h2 className="menuSubheader">Desserts</h2>
       <div className="menuSectionContainer">
-        {" "}
         {desserts.map((e) => (
           <MenuItem
             image={e.image}
             description={e.description}
             price={e.price}
             name={e.name}
+            key={e.name}
           />
         ))}
       </div>

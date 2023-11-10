@@ -89,7 +89,7 @@ function Footer() {
         <ul>
           {socialMedia.map((e) => (
             <li key={e.alt} className="socialMediaListItem">
-              <a href={e.links} target="_blank">
+              <a href={e.links}>
                 <img
                   src={e.image}
                   style={{ width: "40px", height: "40px" }}

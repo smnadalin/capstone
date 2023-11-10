@@ -39,25 +39,25 @@ function Contact() {
           <h2 className="contactSubtitle">Opening Times:</h2>
           <ul className="openingTimes">
             <li>
-              <span class="day">Monday:</span> Closed
+              <span className="day">Monday:</span> Closed
             </li>
             <li>
-              <span class="day">Tuesday:</span> Closed
+              <span className="day">Tuesday:</span> Closed
             </li>
             <li>
-              <span class="day">Wednesday:</span> 12pm - 11pm
+              <span className="day">Wednesday:</span> 12pm - 11pm
             </li>
             <li>
-              <span class="day">Thursday:</span> 12pm - 11pm
+              <span className="day">Thursday:</span> 12pm - 11pm
             </li>
             <li>
-              <span class="day">Friday:</span> 12pm - 11pm
+              <span className="day">Friday:</span> 12pm - 11pm
             </li>
             <li>
-              <span class="day">Saturday:</span> 12pm - 11pm
+              <span className="day">Saturday:</span> 12pm - 11pm
             </li>
             <li>
-              <span class="day">Sunday:</span> 12pm - 11pm
+              <span className="day">Sunday:</span> 12pm - 11pm
             </li>
           </ul>
         </div>
@@ -67,9 +67,9 @@ function Contact() {
           width="100%"
           height="100%"
           style={{ border: "0" }}
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </div>

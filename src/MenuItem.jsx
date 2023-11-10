@@ -1,6 +1,6 @@
 function MenuItem({ image, name, description, price }) {
   return (
-    <div className="menuItemContainer">
+    <div className="menuItemContainer" key={name}>
       <img className="menuImage" src={image} alt={name} />
       <p className="menuItemHeader">{name}</p>
       <p className="menuItemPrice">{price}</p>

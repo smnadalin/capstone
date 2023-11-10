@@ -4,8 +4,8 @@ function Hero() {
   return (
     <main>
       <div className="heroSection">
-        <div class="overlay"></div>
-        <div class="heroContent">
+        <div className="overlay"></div>
+        <div className="heroContent">
           <h1 className="heroTitle">Little Lemon</h1>
           <p className="heroSubtitle">Chicago</p>
           <p className="heroText">

@@ -2,6 +2,7 @@ import greekSaladImage from "./Images/greek salad.png";
 import bruschettaImage from "./Images/bruchetta.png";
 import lemonImage from "./Images/lemon dessert.png";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Specials() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,9 +30,11 @@ function Specials() {
     <>
       <div className={`specialsHeader ${isScrolled ? "fade-in" : ""}`}>
         <h1>Specials</h1>
-        {/* <div>
-          <button>Online Menu</button>
-        </div> */}
+        <div>
+          <Link to="/menu">
+            <button className="heroButton">Online Menu</button>
+          </Link>
+        </div>
       </div>
       <div className={`specialsMain ${isScrolled ? "fade-in" : ""}`}>
         <div>

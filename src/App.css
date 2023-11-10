@@ -87,6 +87,13 @@ footer {
   padding-bottom: 16px;
 }
 
+.menuSubheader {
+  font-family: "Markazi Text", serif;
+  font-weight: 500;
+  font-size: 32px;
+  margin: 10px 0px;
+}
+
 .footerImageContainer {
   margin: auto;
 }
@@ -179,13 +186,14 @@ main {
   width: 300px;
   height: 400px;
   border-radius: 16px 16px 0px 0px;
-  margin: 10px;
+  margin-right: 10px;
 }
 
 .menuContainer {
   padding-top: 160px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 30px;
 }
 
 .menuSectionContainer {
@@ -340,8 +348,13 @@ main > div > img {
 
 form {
   display: grid;
-  max-width: 200px;
-  gap: 20px;
+  max-width: 300px;
+  margin: auto;
+  padding: 16px;
+  gap: 8px;
+  text-align: center;
+  width: 960px;
+  margin-bottom: 16px;
 }
 
 .specialsHeader > h1 {
@@ -413,44 +426,28 @@ form {
   margin: auto;
 }
 
-form {
-  margin: auto;
-  padding: 16px;
-  gap: 8px;
-  text-align: center;
-  width: 960px;
-  margin-bottom: 16px;
-}
-
 label {
   font-family: Karla, sans-serif;
   font-size: 18px;
   font-weight: 500;
 }
 
-form > p {
+form div > p {
   margin: 0px;
   padding: 0px;
   text-align: center;
 }
 
-form > input {
-  text-align: center;
-}
-
-form > select {
-  text-align: center;
-}
-
 input {
   height: 60px;
-  width: 200px;
+  width: 300px;
   padding: 0px;
   margin: 0px;
   border-radius: 16px;
   font-family: Karla, sans-serif;
   font-size: 18px;
   font-weight: 500;
+  text-align: center;
 }
 
 .submitButton {
@@ -474,13 +471,14 @@ input {
 
 select {
   height: 60px;
-  width: 200px;
+  width: 300px;
   padding: 0px;
   margin: 0px;
   border-radius: 16px;
   font-family: Karla, sans-serif;
   font-size: 18px;
   font-weight: 500;
+  text-align: center;
 }
 
 .bookingFormHeader {
@@ -579,7 +577,7 @@ footer > div > ul > li {
 }
 
 .bookingConfirmed {
-  padding-top: 16px;
+  padding-top: 160px;
   height: 456px;
 }
 
@@ -674,7 +672,10 @@ footer > div > ul > li {
 }
 
 @media only screen and (min-width: 960px) {
-  .menuContainer {
+  form {
+    max-width: 960px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px 120px 100px;
   }
   .contactContents {
     display: grid;
@@ -797,5 +798,15 @@ footer > div > ul > li {
 
   .menuContainer {
     padding: 96px calc((100% - 960px) / 2) 0px calc((100% - 960px) / 2);
+  }
+
+  .bookingConfirmed {
+    padding-top: 96px;
+  }
+
+  .submitButton {
+    grid-row: 3;
+    grid-column: 2;
+    margin: auto;
   }
 }
